@@ -1,2 +1,2 @@
-# ThaiQR-Generator
+# ThaiQR-WebGenerator
 QR generator on web for ThaiQR
