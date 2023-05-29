@@ -1,0 +1,31 @@
+<header>
+    <!-- codes from http://davidshimjs.github.io/qrcodejs/ -->
+    <!-- <script src="./qrcode/qrcode.min.js"></script> -->
+    <script src="./qrcode/qrcode.js"></script>
+    
+    <!-- I changed CRC from 32 to 16 (Cef)-->
+    <!-- <script src="./crc32.js"></script> -->
+    <script src="./crc16.js"></script>
+
+    <!-- I wrote up a function myself (Cef) -->
+    <script src="./promptpayQR.js"></script>
+</header>
+
+<body>
+    <!-- app -->
+    <div id=app style="top: 10px; left: 10px; /*display: none;*/">
+        App <br>
+        <form id=appForm>
+            BoardID: <input type="number" id=bid value="1"><br>
+            Quantity: <input type="number" id=qty value="1"><br>
+            Referrence ID: <input type="text" id=ref value="1"><br>
+        </form>
+        <button onclick="callApp()">Start App</button>
+        <button onclick="promptpayQR()">create qr</button>
+        <br><br>
+        <div id="qrcode"></div>
+    </div><br>
+    </div>
+
+
+</body>
